@@ -1,0 +1,89 @@
+main{
+    max-width: 980px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: gray;
+}
+.jumbotron {
+    width: 100%;
+    height: 500px;
+    background-image: url('https://source.unsplash.com/random');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0 auto;   
+}
+.jumbotron h1{
+    color:black;
+    background-color: white;
+    display: inline;    
+}
+
+#text_block {
+    position: absolute;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 2rem;
+    max-width: 70%;
+}
+
+#outPutSearch{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 2em 5em;
+    align-items: center;
+}
+
+#outPutSearch p{
+    padding: 2em;
+    border-bottom: .25em solid #E6D9F3;
+    color: white;
+}
+
+.form-inline{
+    justify-content: center;
+}
+
+footer{
+    text-align: center;
+}
+
+footer p:nth-of-type(2){
+    font-size: 0.5em;
+}
+
+/*PageLoader*/
+.spinner {
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+  
+    margin: 100px auto;
+    -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+    animation: sk-rotateplane 1.2s infinite ease-in-out;
+}
+  
+@-webkit-keyframes sk-rotateplane {
+    0% { -webkit-transform: perspective(120px) }
+    50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+    100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+}
+  
+@keyframes sk-rotateplane {
+    0% { 
+      transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+      -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg) 
+    } 50% { 
+      transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+      -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg) 
+    } 100% { 
+      transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+      -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    }
+}
+
+  
